@@ -3,7 +3,6 @@
 namespace Darinlarimore\Statamic3dField\Fieldtypes;
 
 use Statamic\Fields\Fieldtype;
-use Statamic\Facades\Asset;
 use Statamic\Exceptions\AssetContainerNotFoundException;
 use Statamic\Facades\AssetContainer;
 use Statamic\Fieldtypes\Assets\UndefinedContainerException;
