@@ -10,7 +10,6 @@ This addon does:
 - Tag for frontend usage
 
 ![Editor View](/readmeAssets/editorView.png)
-![Config View](/readmeAssets/configView.png)
 
 ## How to Install
 
