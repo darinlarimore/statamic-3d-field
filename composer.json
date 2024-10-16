@@ -1,0 +1,35 @@
+{
+    "name": "darinlarimore/statamic-3d-field",
+    "autoload": {
+        "psr-4": {
+            "Darinlarimore\\Statamic3dField\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Darinlarimore\\Statamic3dField\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0",
+        "php": "^8.2"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic 3D Field",
+            "description": "Statamic 3D Field addon"
+        },
+        "laravel": {
+            "providers": [
+                "Darinlarimore\\Statamic3dField\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
