@@ -1,4 +1,7 @@
+import '../css/main.css'
 import Fieldtype from './components/ThreeDModel.vue'
-import { ModelViewerElement } from '@google/model-viewer'
+import '@google/model-viewer'
 
-Statamic.$components.register('3d_model-fieldtype', Fieldtype)
+Statamic.booting(() => {
+	Statamic.$components.register('3d_model-fieldtype', Fieldtype)
+})

@@ -27,7 +27,7 @@
 		<div v-if="data.threeDFile.error" class="d-text-red-500">{{ data.threeDFile.error }}</div>
 
 
-		<div v-if="this.data.threeDFile.url">
+		<div v-if="data.threeDFile.url">
 			<!-- full width model viewer -->
 			<model-viewer
 				class="d-w-full d-h-96"
@@ -66,7 +66,7 @@
 				<div>
 					<p class="text-sm">Enable or disable auto rotate</p>
 					<div class="d-flex d-gap-4 d-items-center ">
-						<toggle-input v-model="data.autoRotate"/>
+						<ui-switch :model-value="data.autoRotate" @update:model-value="data.autoRotate = $event"/>
 						<label for="autoRotate">Auto Rotate</label>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 				<div>
 					<p class="text-sm">Enable or disable camera controls</p>
 					<div class="d-flex d-gap-4 d-items-center">
-						<toggle-input v-model="data.cameraControls" />
+						<ui-switch :model-value="data.cameraControls" @update:model-value="data.cameraControls = $event" />
 						<label for="cameraControls">Camera Controls</label>
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 							</div>
 						</div>
 					</div>
-					<div v-if="this.data.usdzFile.error" class="d-text-red-500">{{ data.usdzFile.error }}</div>
+					<div v-if="data.usdzFile.error" class="d-text-red-500">{{ data.usdzFile.error }}</div>
 				</div>
 
 				<!-- exposure slider option -->
@@ -147,7 +147,7 @@
 							</div>
 						</div>
 					</div>
-					<div v-if="this.data.posterImage.error" class="d-text-red-500">{{ data.posterImage.error }}</div>
+					<div v-if="data.posterImage.error" class="d-text-red-500">{{ data.posterImage.error }}</div>
 				</div>
 
 				<!-- Skybox Image Option -->
@@ -173,7 +173,7 @@
 							</div>
 						</div>
 					</div>
-					<div v-if="this.data.skyBoxImage.error" class="d-text-red-500">{{ data.skyBoxImage.error }}</div>
+					<div v-if="data.skyBoxImage.error" class="d-text-red-500">{{ data.skyBoxImage.error }}</div>
 				</div>
 
 			</div>
